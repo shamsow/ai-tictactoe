@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI Tic Tac Toe</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+        <script src = "{{ url_for('static', filename='scripts.js') }}"></script>
+    </head>
+    <body>
+      <div id="overlay"></div>
+      <div class="container mt-5">
+          <h1 class="text-monospace font-weight-bolder text-uppercase mb-4 display-4">AI Tic-Tac-Toe</h1>
+          <div class="play-area">
+            <!-- The board will be added here using JavaScript -->
+          </div>
+
+          <button class="btn btn-dark mt-4" onclick="reset_board()">RESET BOARD</button>
+          <h1 id="result" class="mt-5 p-5"></h1>
+        </div>
+    </body>
+</html>
